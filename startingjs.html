@@ -9,10 +9,23 @@
     <link rel="stylesheet" href="startingjs.css">
 </head>
 <body class="window">
-    <button id="Day" class="button" id="daybtn" onclick="colorchange('white')" >Day Mode</button>
-    <button id="Night" class="button" id="nighbtn" onclick="colorchange('#333333')">Night Mode</button>
+    <div class="btnbar">
+        <div id="btnclass1"></div>
+        <button  class="modebutton" id="daybtn" onclick="colorchange('white')"
+    onmouseenter="daybtnchange()" onmouseleave="daybtnchange1()" >Day Mode</button>
+    <button  class="modebutton" id='nightbtn'onmouseenter="nightbtnchange() "onmouseleave="nightbtnchange1()" onclick="colorchange('#302f36')">Night Mode</button>
+    </div>
+
+    <div id="btnclass2">
+        <!-- <button id="24hrformat" ></button> -->
+    </div>
+        </div>
+        
+    
+    
     <div id="clockplaceholder">
         <div id="subclockplaceholder">
+            <p id="DateMainScript"></p>
             <p id="ClockMainScript"></p>
         </div>
     </div>
