@@ -1,5 +1,5 @@
 
-
+//Code for JS
 
 function time(){
     let a= new Date();
